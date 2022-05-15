@@ -18,5 +18,8 @@ public class LinkedListMain {
         linkedList.deletFirst();
         System.out.println();
         linkedList.print();
+        linkedList.deletLast();
+        System.out.println();
+        linkedList.print();
     }
 }
