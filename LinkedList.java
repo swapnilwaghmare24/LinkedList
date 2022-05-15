@@ -77,7 +77,19 @@ public class LinkedList<T> {
         }
         secondLast.next=null;
     }
+    void deleteSpecificData(T data)
+    {
+        Node seconLast = head;
+        Node last = head.next;
+        while (last.data!=data)
+        {
+            last=last.next;
+            seconLast=seconLast.next;
+        }
+        Node temp = last.next;
+        seconLast.next=temp;
 
+    }
     void print()
     {
         if(head==null)

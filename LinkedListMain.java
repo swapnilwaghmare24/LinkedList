@@ -15,10 +15,13 @@ public class LinkedListMain {
         linkedList.addNodePosition(30,2);
         linkedList.addNodeLast(70);
         linkedList.print();
-        linkedList.deletFirst();
-        System.out.println();
-        linkedList.print();
-        linkedList.deletLast();
+        // linkedList.deletFirst();
+        // System.out.println();
+        //linkedList.print();
+        //linkedList.deletLast();
+        //System.out.println();
+        //linkedList.print();
+        linkedList.deleteSpecificData(30);
         System.out.println();
         linkedList.print();
     }
