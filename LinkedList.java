@@ -31,6 +31,25 @@ public class LinkedList<T> {
         temp.next=newNode;
 
     }
+    void addNodePosition(T data,int position)
+    {
+        Node newNode = new Node(data);
+        if(head==null)
+        {
+            head=newNode;
+            return;
+        }
+        Node previous = head;
+        int count = 1;
+        while(count < position-1)
+        {
+            previous=previous.next;
+            count++;
+        }
+        Node temp=previous.next;
+        newNode.next=temp;
+        previous.next=newNode;
+    }
     void print()
     {
         if(head==null)
