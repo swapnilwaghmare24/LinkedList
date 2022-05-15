@@ -15,5 +15,8 @@ public class LinkedListMain {
         linkedList.addNodePosition(30,2);
         linkedList.addNodeLast(70);
         linkedList.print();
+        linkedList.deletFirst();
+        System.out.println();
+        linkedList.print();
     }
 }
