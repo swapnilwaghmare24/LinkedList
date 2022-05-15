@@ -50,6 +50,17 @@ public class LinkedList<T> {
         newNode.next=temp;
         previous.next=newNode;
     }
+    void deletFirst()
+    {
+        if(head==null)
+        {
+            System.out.println("List is empty");
+            return;
+        }
+        Node temp = head;
+        head = temp.next;
+
+    }
     void print()
     {
         if(head==null)
